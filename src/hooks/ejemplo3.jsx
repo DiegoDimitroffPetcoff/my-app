@@ -27,13 +27,13 @@ export function Ejemplo3() {
         <div>
           <p id="jugador">JUGADOR 1</p>
           <p id="card1">
-            <img id={sessionData.fix} src={sessionData.card1}></img>
+            <img id={sessionData.fix} src={sessionData.card1} alt="description of image"></img>
           </p>
         </div>
         <div>
           <p id="jugador">JUGADOR 2</p>
           <p id="card1">
-            <img id={sessionData.fix} src={sessionData.card2}></img>
+            <img id={sessionData.fix} src={sessionData.card2} alt="description of image"></img>
           </p>
         </div>
       </div>
