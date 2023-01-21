@@ -2,37 +2,38 @@ import React, { useState } from "react";
 import Papel from "../IMAGEN/PAPEL.png";
 import Tijera from "../IMAGEN/TIJERA.png";
 import Piedra from "../IMAGEN/PIEDRA.png";
+import Background from "../IMAGEN/background.jpg";
 
 export function Ejemplo3() {
   const estadoIncial = {
-    card1: "CARTA 1",
-    card2: "CARTA 2",
+    card1: Background,
+    card2: Background,
+    fix: "imagen",
   };
 
   const [sessionData, setResult] = useState(estadoIncial);
+  const nombres = [Papel, Tijera, Piedra];
 
   const UpdateSession = () => {
-    const nombres = [Papel, Tijera, Piedra];
-    const aleatorio1 = nombres[Math.floor(Math.random() * nombres.length)];
-    const aleatorio2 = nombres[Math.floor(Math.random() * nombres.length)];
     setResult({
-      card1: aleatorio1,
-      card2: aleatorio2,
+      card1: nombres[Math.floor(Math.random() * nombres.length)],
+      card2: nombres[Math.floor(Math.random() * nombres.length)],
+      fix: "fixed",
     });
   };
   return (
     <div class="mainBlock">
       <div class="column">
         <div>
-          <p id="jugador">jugador 1</p>
+          <p id="jugador">JUGADOR 1</p>
           <p id="card1">
-            <img id="imagen" src={sessionData.card1}></img>
+            <img id={sessionData.fix} src={sessionData.card1}></img>
           </p>
         </div>
         <div>
-          <p id="jugador">jugador 2</p>
+          <p id="jugador">JUGADOR 2</p>
           <p id="card1">
-            <img id="imagen" src={sessionData.card2}></img>
+            <img id={sessionData.fix} src={sessionData.card2}></img>
           </p>
         </div>
       </div>
