@@ -4,14 +4,7 @@ import Tijera from "../IMAGEN/TIJERA.png";
 import Piedra from "../IMAGEN/PIEDRA.png";
 import Background from "../IMAGEN/background.jpg";
 
-import { useSpring, animated } from "@react-spring/web";
-
 export function Ejemplo3() {
-  const springs = useSpring({
-    from: { x: 10 },
-    to: { x: 200 },
-  });
-
   const estadoIncial = {
     card1: Background,
     card2: Background,
@@ -28,31 +21,19 @@ export function Ejemplo3() {
       fix: "fixed",
     });
   };
-
   return (
     <div class="mainBlock">
-
-
       <div class="column">
         <div>
           <p id="jugador">JUGADOR 1</p>
           <p id="card1">
-            <img
-              style={springs}
-              id={sessionData.fix}
-              src={sessionData.card1}
-              alt="First player's action "
-            ></img>
+            <img id={sessionData.fix} src={sessionData.card1} alt="First player's action "></img>
           </p>
         </div>
         <div>
           <p id="jugador">JUGADOR 2</p>
           <p id="card1">
-            <img
-              id={sessionData.fix}
-              src={sessionData.card2}
-              alt="Second player's action"
-            ></img>
+            <img id={sessionData.fix} src={sessionData.card2} alt="Second player's action"></img>
           </p>
         </div>
       </div>
