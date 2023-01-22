@@ -38,7 +38,7 @@ export function Ejemplo3() {
         </div>
       </div>
       <div class="column">
-        <button id="buttonCambiarToken" onClick={UpdateSession}>
+        <button id="button" onClick={UpdateSession}>
           JUGAR
         </button>
       </div>
