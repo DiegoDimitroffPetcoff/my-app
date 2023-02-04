@@ -4,7 +4,7 @@ import Tijera from "../IMAGEN/TIJERA.png";
 import Piedra from "../IMAGEN/PIEDRA.png";
 import Background from "../IMAGEN/background.jpg";
 
-export function Ejemplo3() {
+export function Game() {
   const estadoIncial = {
     card1: Background,
     card2: Background,

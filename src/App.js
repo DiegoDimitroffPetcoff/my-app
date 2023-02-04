@@ -4,7 +4,8 @@ import "./App.css";
 // import { UserContainer } from "./components/containers/user";
 // import { Ejemplo1 } from "./hooks/ejemplo1";
 // import { Ejemplo2 } from "./hooks/ejemplo2";
-import { Ejemplo3 } from "./hooks/ejemplo3";
+// import { Ejemplo3 } from "./hooks/index";
+import { Cards } from "./hooks/tarjeta";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         {/* Ejempo1 de Hooks1 */}
         {/* <Ejemplo1></Ejemplo1> */}
         {/* <Ejemplo2></Ejemplo2> */}
-        <Ejemplo3></Ejemplo3>
+        {/* <Ejemplo3></Ejemplo3> */}
+          <Cards></Cards>
       </header>
     </div>
   );
