@@ -17,9 +17,9 @@ export function Cards() {
           <p>
             Con la Piedra puedes ganar a la tijera, pero perder contra el papel
           </p>
-          <div class="link">
+          {/* <div class="link">
             <a href="#">diatils..</a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div class="card">
@@ -32,9 +32,9 @@ export function Cards() {
           <p>
             Con el Papel puedes ganar a la piedra, pero perder contra la tijera
           </p>
-          <div class="link">
+          {/* <div class="link">
             <a href="#">diatils..</a>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -49,9 +49,9 @@ export function Cards() {
           <p>
             Con la Tijera puedes ganar al papel, pero perder contra la piedra
           </p>
-          <div class="link">
+          {/* <div class="link">
             <a href="#">diatils..</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
