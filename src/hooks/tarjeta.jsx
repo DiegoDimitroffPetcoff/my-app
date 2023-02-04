@@ -2,7 +2,7 @@ import React from "react";
 import Papel from "../IMAGEN/PAPEL.png";
 import Tijera from "../IMAGEN/TIJERA.png";
 import Piedra from "../IMAGEN/PIEDRA.png";
-import Background from "../IMAGEN/background.jpg";
+// import Background from "../IMAGEN/background.jpg";
 
 export function Cards() {
   return (
